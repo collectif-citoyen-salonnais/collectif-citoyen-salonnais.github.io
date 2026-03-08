@@ -14,8 +14,8 @@ $container-narrow: 750px;
 // limit base container size to make reading easier
 //$container-max: 750px;
 
-/* bring in template styles */
-@import "template"; 
+/* bring in template styles 
+@import "template"; */
 
 /* bring in custom styles */
 @import "custom";
