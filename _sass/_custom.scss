@@ -1,0 +1,222 @@
+/* add your scss tweaks here */
+
+
+/*
+orange : #FF9C46
+blue-dark: #222A68
+blue-light: #7F7EFF
+*/
+
+$orange: #FF9C46;
+$bleu: #222A68;
+$bleuclair: #C4C3FD;
+
+@font-face {
+    font-family: "Condell-Bold";
+    src:url("/assets/fonts/condell-bold.ttf") format('truetype');
+}
+
+
+body{
+  background-color: $orange;
+}
+#une-liste-citoyenne{
+  background-color: $bleuclair;
+}
+#assemblees-citoyennes{
+  background-color: $orange;
+}
+#profession-de-foi{
+  background-color: $bleuclair;
+}
+#les-candidats{
+  background-color: $orange;
+}
+#contact{
+  background-color: $bleuclair;
+}
+
+.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row{
+  justify-content: center;
+}
+
+#une-liste-citoyenne,
+#assemblees-citoyennes,
+#profession-de-foi,
+#les-candidats,
+#contact{
+  padding: 2rem 0 2rem 0;
+}
+
+
+/* logo */
+#logo{
+  display: none;
+}
+
+@media (min-width: 992px){
+  #logo{
+    position: absolute;
+    top: 15px;
+    display: block;
+  }
+}
+
+
+/* navbar*/
+.navbar-expand-lg{
+  background-color: white;
+}
+
+#navbarContent > .navbar-nav{
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media (min-width: 992px) {
+.facebook-item{
+  position: absolute;
+  right: 1.5%;
+  top: 15%;
+  transition: all .5s ease;
+}
+
+.facebook-item:hover img{
+  position: relative;
+  bottom:1px;
+  transition: all .5s ease;
+}
+}
+
+/* typo */
+
+h1,h2{
+  font-family: "Condell-Bold";
+}
+
+/*ombre titre debut */
+.titre{
+  display: flex;
+  justify-content: center;
+}
+  
+h2{
+  background:#fff;
+  border: solid black;
+  border-color: black;
+  float:left; 
+  border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  padding: .5rem 2rem;
+}
+/*ombre titre fin */
+
+.titre{
+  padding: 0;
+}
+.titre > h2{
+  margin: .5rem;
+  margin-bottom: 2rem;
+}
+
+
+/* profession-de-foi */
+
+#profession-de-foi h3{
+  display: inline-block;
+  margin-bottom: .75rem;
+  transform: skew(15deg);
+  border-radius: 3px;
+  background-color: #f6f65c;
+  padding: 5px 1rem;
+  position: relative;
+  left: -20px;
+}
+
+#profession-de-foi h3 span{
+  display: inline-block;
+  transform: skew(-15deg);
+}
+
+#profession-de-foi .section{
+  margin-top: 2rem;
+}
+
+#profession-de-foi .list-group li{
+  background-color: transparent;
+  list-style-type: disclosure-closed;
+  display: list-item;
+  margin-left: 3rem;
+  padding-left: 5px;
+}
+
+/* candidat */
+
+.text-candidat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: .75rem;
+}
+
+#les-candidats img{
+  max-width: 100px;
+}
+
+/* media queries */
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-expand-lg .navbar-collapse > ul {
+    margin-right: 0 !important;
+}
+
+ .nav-link{
+  display:inline;
+}
+
+ .col-12.paragraphe{
+  max-width: 60%;
+ }
+
+}
+
+@media (max-width: 991px) {
+  .col-12.paragraphe{
+  max-width: 90%;
+ }
+}
+
+
+footer{
+  text-align: center;
+}
+
+footer > .container{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  footer > .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+}
+
+footer > .container p{
+  margin-bottom: 0;
+}

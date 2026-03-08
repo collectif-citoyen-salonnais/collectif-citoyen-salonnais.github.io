@@ -1,0 +1,70 @@
+<div class="container">
+        <div class="row mt-2">
+            <div id="logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+            <div class="col-12 text-center">
+                <h1>Liste Citoyenne Salonnaise</h1>
+            </div>
+            <div class="col-12 text-center">
+                <h1>Salon en commun</h1>
+            </div>
+        </div>
+</div>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#une-liste-citoyenne">
+                        Qu’est-ce qu’une liste citoyenne participative ?
+                    </a>
+		</li>
+		<li class="nav-item">
+                    <a class="nav-link" href="#assemblees-citoyennes">
+                        Assemblées citoyennes
+                    </a>
+		</li>
+		<li class="nav-item">
+                    <a class="nav-link" href="#profession-de-foi">
+                        Profession de foi
+                    </a>
+		<li class="nav-item">
+                    <a class="nav-link" href="#les-candidats">
+                        Les candidats
+                    </a>
+		</li>
+		<li class="nav-item">
+                    <a class="nav-link" href="">
+                        Nous contacter
+                    </a>
+		</li>
+        <li class="nav-item facebook-item">
+                    <a class="nav-link" href="https://www.facebook.com/people/LISTE-Citoyenne-Salonnaise/61587235115261/" target="_blank">
+                        <img src="assets/img/fb.png" alt="">
+                    </a>
+		</li>              
+            </ul>
+            {% if site.search == true %}
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value;
+                    window.open("{{ '/search.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
+                    }
+            </script>
+            <form class="d-flex" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
+                </div>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</nav>
