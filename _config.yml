@@ -20,7 +20,7 @@ search: false
 # use a relative link to image file in project or full url
 #featured-image:
 #featured-image-alt:
-
+theme: null
 ##########
 # URL VARIABLES [optional!]
 #
